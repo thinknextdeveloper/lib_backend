@@ -63,7 +63,7 @@ exports.login = async (req, res) => {
           FROM dbo.UserMaster
           WHERE UserName = @userName
             AND ApplicationName = @applicationName
-          ORDER BY collegeId
+          ORDER BY ApplicationName
         `)
     );
 

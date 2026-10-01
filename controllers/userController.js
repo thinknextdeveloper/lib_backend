@@ -60,7 +60,6 @@ exports.login = async (req, res) => {
             ApplicationName,
             CollegeName,
             RightsLevel,
-            collegeId
           FROM dbo.UserMaster
           WHERE UserName = @userName
             AND ApplicationName = @applicationName

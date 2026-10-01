@@ -59,7 +59,7 @@ exports.login = async (req, res) => {
             LoginType,
             ApplicationName,
             CollegeName,
-            RightsLevel,
+            RightsLevel
           FROM dbo.UserMaster
           WHERE UserName = @userName
             AND ApplicationName = @applicationName

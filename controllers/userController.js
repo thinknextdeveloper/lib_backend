@@ -9,6 +9,7 @@ const signTokens = (u) => ({
     {
       userName: u.UserName,
       collegeId: u.collegeId,
+      collegeName: u.CollegeName,
       rightsLevel: u.RightsLevel,
       loginType: u.LoginType,
     },
@@ -19,6 +20,7 @@ const signTokens = (u) => ({
     {
       userName: u.UserName,
       collegeId: u.collegeId,
+      collegeName: u.CollegeName,
       loginType: u.LoginType,
     },
     process.env.JWT_REFRESH_SECRET,

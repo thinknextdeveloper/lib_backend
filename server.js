@@ -16,6 +16,11 @@ app.use("/api/user", require("./routes/userRoutes"));
 app.use("/api/menu", require("./routes/menuRoutes")); 
 app.use("/api/renew", require("./routes/renewRoutes"));
 app.use("/api/issue-book", require("./routes/issueBookRoutes"));
+app.use("/api/demand-books", require("./routes/demandBooksRoutes")); 
+app.use("/api/accession", require("./routes/accessionRoutes")); 
+app.use("/api/student", require("./routes/studentRoutes")); 
+app.use("/api/faculty", require("./routes/facultyRoutes")); 
+app.use("/api/search-books", require("./routes/searchBooksRoutes")); 
 const PORT = Number(process.env.PORT || 5000);
 
 connectDB()

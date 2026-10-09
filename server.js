@@ -14,6 +14,8 @@ app.get("/api/health", (req, res) => res.json({ message: "API running" }));
 app.use("/api/user", require("./routes/userRoutes"));
 // app.use("/api/books", require("./routes/bookRoutes"));
 app.use("/api/menu", require("./routes/menuRoutes")); 
+app.use("/api/renew", require("./routes/renewRoutes"));
+app.use("/api/issue-book", require("./routes/issueBookRoutes"));
 const PORT = Number(process.env.PORT || 5000);
 
 connectDB()

@@ -14,7 +14,7 @@ const signTokens = (u) => ({
       loginType: u.LoginType,
     },
     process.env.JWT_SECRET,
-    { expiresIn: "15m" }
+    { expiresIn: "1d" }
   ),
   refreshToken: jwt.sign(
     {

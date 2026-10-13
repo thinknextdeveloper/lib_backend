@@ -14,12 +14,17 @@ app.get("/api/health", (req, res) => res.json({ message: "API running" }));
 app.use("/api/user", require("./routes/userRoutes"));
 // app.use("/api/books", require("./routes/bookRoutes"));
 app.use("/api/menu", require("./routes/menuRoutes")); 
+app.use("/api/renew", require("./routes/renewRoutes"));
+app.use("/api/issue-book", require("./routes/issueBookRoutes"));
 app.use("/api/demand-books", require("./routes/demandBooksRoutes")); 
 app.use("/api/accession", require("./routes/accessionRoutes")); 
 app.use("/api/student", require("./routes/studentRoutes")); 
 app.use("/api/faculty", require("./routes/facultyRoutes")); 
 app.use("/api/search-books", require("./routes/searchBooksRoutes")); 
 app.use("/api/stock-books", require("./routes/stockBooksRoutes")); 
+app.use("/api/stock", require("./routes/stockRoutes"));
+app.use("/api/reports", require("./routes/reportRoutes"));
+app.use("/api/gate", require("./routes/gateRoutes"));
 const PORT = Number(process.env.PORT || 5000);
 
 connectDB()

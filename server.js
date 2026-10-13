@@ -19,6 +19,7 @@ app.use("/api/accession", require("./routes/accessionRoutes"));
 app.use("/api/student", require("./routes/studentRoutes")); 
 app.use("/api/faculty", require("./routes/facultyRoutes")); 
 app.use("/api/search-books", require("./routes/searchBooksRoutes")); 
+app.use("/api/stock-books", require("./routes/stockBooksRoutes")); 
 const PORT = Number(process.env.PORT || 5000);
 
 connectDB()
